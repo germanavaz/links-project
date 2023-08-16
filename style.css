@@ -3,19 +3,23 @@
 :root {
     --text-color:  #ffffff;
     --switch-url: url(./images/moon.svg);
+    --highlight-color: rgba(255, 255, 255, 0.2);
     --bg-color: #000000;
-    --bg-button-color:rgba(0, 255, 150, 0.1);
+    --bg-button-color:rgba(0, 255, 150, 0.4);
     --bg-button-color-hover:  rgba(255, 255, 255, 0.1);
     --button-border-color:  rgba(255, 255, 255, 0.5);
+    --switch-button-color: rgba(0, 255, 150, 0.3);
 }
 
 .light {
     --text-color:  #000000;
     --switch-url: url(./images/sun.svg);
+    --highlight-color: rgba(0, 0, 0, 0.1);
     --bg-color: #FFFFFF;
     --bg-button-color:rgba(0, 255, 100, 0.8);
     --bg-button-color-hover:  rgba(0, 0, 0, 0.2);
     --button-border-color:  rgba(0, 0, 0, 0.7);
+    --switch-button-colorrgba(0, 255, 0);
 
 }
 
@@ -71,12 +75,20 @@ header img {
     animation: slide-back 0.2s;
 }
 
+.light #switch button {
+    animation: slide-in 0.2s forwards;
+  }
+  
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+}
+
 #switch span {
     display: block;
     width: 64px;
     height: 24px;
-    background: rgba(0, 255, 150, 0.3);
-    border: 1px solid grey;
+    background: var(--switch-button-color);
+    border: 1px solid var(--switch-border-color);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
