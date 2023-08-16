@@ -1,4 +1,4 @@
-<h1 align="center"> Links </h1>
+<h1 align="center"> Projeto Links </h1>
 
 <p align="center">
 Projeto desenvolvido para entrega do desafio do da Rocketseat no curso Discover. <br/>
@@ -7,9 +7,7 @@ Projeto desenvolvido para entrega do desafio do da Rocketseat no curso Discover.
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
