@@ -4,29 +4,30 @@
     --text-color:  #ffffff;
     --switch-url: url(./images/moon.svg);
     --highlight-color: rgba(255, 255, 255, 0.2);
-    --bg-color: #000000;
-    --bg-button-color:rgba(0, 255, 150, 0.4);
+    --bg-color: radial-gradient(circle at 43.84% -20.44%, #a7d5ff 0, #4a639a 50%, #000003 100%);;
+    --bg-button-color: #425787;
     --bg-button-color-hover:  rgba(255, 255, 255, 0.1);
-    --button-border-color:  rgba(255, 255, 255, 0.5);
-    --switch-button-color: rgba(0, 255, 150, 0.3);
+    --button-border-color:  rgba(255, 255, 255);
+    --switch-button-color: #424242;
 }
 
 .light {
     --text-color:  #000000;
     --switch-url: url(./images/sun.svg);
     --highlight-color: rgba(0, 0, 0, 0.1);
-    --bg-color: #FFFFFF;
-    --bg-button-color:rgba(0, 255, 100, 0.8);
-    --bg-button-color-hover:  rgba(0, 0, 0, 0.2);
+    --bg-color: radial-gradient(circle at 43.84% -20.44%, #ff9162 0, #ff8464 12.5%, #ff7262 25%, #ff5a5e 37.5%, #ff3858 50%, #ef0053 62.5%, #e10052 75%, #d60055 87.5%, #ce005c 100%);;
+    --bg-button-color:#ce005c;
+    --bg-button-color-hover:  rgba(255, 255, 255, 0.1);
     --button-border-color:  rgba(0, 0, 0, 0.7);
-    --switch-button-color: rgba(0, 255, 0, 1);
+    --switch-button-color: #FF9797;
 
 }
 
 /* configs gerais */
 
 body {
-    background-color: var(--bg-color);
+    background-image: var(--bg-color);
+    height: 100vh;
 }
 
 body * {
@@ -60,8 +61,8 @@ header img {
 }
 
 #switch button {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     background: white var(--switch-url) no-repeat center;
     border: 0;
     border-radius: 50%;
@@ -89,10 +90,11 @@ header img {
     width: 64px;
     height: 24px;
     background: var(--switch-button-color);
-    border: 1px solid var(--switch-border-color);
+    /* border: 1px solid white; */
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border-radius: 9999px;
+    
 }
 
 /* links */
@@ -113,6 +115,7 @@ header img {
     border: 2px solid var(--button-border-color);
     border-radius: 5px;
     padding: 10px 50px ;
+    width: 300px;
     display: inline-block;
 
     backdrop-filter: blur(4px);
