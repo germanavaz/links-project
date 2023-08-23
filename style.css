@@ -156,3 +156,11 @@ header img {
 }
 
 /* footer */
+
+
+@media (max-width: 500px) {
+    .links ul li a {
+        width: 100px;
+    }
+    
+}
